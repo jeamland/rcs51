@@ -4,12 +4,14 @@ pub trait Memory {
 }
 
 pub struct SimpleMemory {
-    bytes: Vec<u8>
+    bytes: Vec<u8>,
 }
 
 impl SimpleMemory {
     pub fn new(size: usize) -> SimpleMemory {
-        SimpleMemory { bytes: vec![0; size] }
+        SimpleMemory {
+            bytes: vec![0; size],
+        }
     }
 }
 

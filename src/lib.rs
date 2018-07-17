@@ -18,8 +18,7 @@ mod tests {
         let mem = memory::SimpleMemory::new(16);
         for address in 0..15 {
             let count = 16 - address;
-            assert_eq!(mem.get_bytes(address, count),
-                vec![0; count].as_slice());
+            assert_eq!(mem.get_bytes(address, count), vec![0; count].as_slice());
         }
     }
 }
